@@ -1,0 +1,79 @@
+/*Estilos de la ventana emergente modal */
+.ventanaEmergenteEventForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    padding: 1rem;
+    background: var(--black-olive);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+
+}
+
+.ventanaEmergenteEventForm.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.ventanaEmergenteEventForm > section {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    overflow: auto;
+    cursor: default;
+}
+.ventanaEmergenteEventForm > section > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 5%;
+
+}
+/*Estilos que afectan a los elementos label  del formulario*/
+.ventanaEmergenteEventForm > section > form > label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    min-width: 100%;
+    color: var(--champagne-pink);
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.ventanaEmergenteEventForm > section > form > input:not([type="submit"]):not([type="button"]),
+.ventanaEmergenteEventForm > section > form > textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: large;
+    margin: 5px 0;
+    min-width: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+.ventanaEmergenteEventForm > section > form > input:not([type="submit"]):not([type="button"]){
+    flex: 1;
+}
+/*Estilos para el enlace crear evento*/
+.ventanaEmergenteEventForm > section > form > #crearEvento {
+    padding: 15px 40px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    opacity: inherit;
+    font-family: 'PT Serif', serif;
+}
+/*Estilos del text area input */
+.ventanaEmergenteEventForm > section > form > textarea {
+    resize: none;
+    flex-wrap: wrap;
+    height: 100px;
+}

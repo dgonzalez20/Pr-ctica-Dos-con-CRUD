@@ -1,0 +1,158 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&family=PT+Serif');
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Colores que vamos ha utilizar */
+:root {
+    --antique-brass: #b98b73ff;
+    --antique-brass-2: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --champagne-pink: #ffe8d6ff;
+    --bone: #d4c7b0ff;
+    --ash-gray: #b7b7a4ff;
+    --artichoke: #a5a58dff;
+    --ebony: #6b705cff;
+    --black-olive: #3f4238ff;
+    --error-form: #7c0202;
+}
+
+/*Afecta a todos los elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 10px;
+    display: block;
+}
+/* Edito el header y el footer de todos los archivos */
+body > header, body > footer {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    animation: 2s fadein 0.5s forwards;
+    opacity: inherit;
+    overflow-x: hidden;
+    z-index: 666666!important;
+}
+
+header > .iconoTitulo, header > .menuBuscar, footer > .iconoTitulo, footer > .navNavegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header > .iconoTitulo > img, footer > .iconoTitulo > img {
+    width: 40px;
+}
+
+header > .iconoTitulo > h2,  header > .menuBuscar > menu, footer > .iconoTitulo > h2,  footer > .navNavegacion > nav {
+    margin: 0 10px;
+}
+
+header > .menuBuscar > menu, footer > .navNavegacion > nav > ul {
+    display: flex;
+    list-style-position: revert;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header > .menuBuscar > menu > li, footer > .navNavegacion > nav > ul > li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+header > .menuBuscar > menu > li > a, footer > .navNavegacion > nav > ul > li > a {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+header > .menuBuscar > menu > li > a:hover, footer > .navNavegacion > nav > ul > li > a:hover {
+    opacity: inherit;
+}
+
+footer > .navNavegacion > nav > ul > li > a {
+    font-size: 24px;
+}
+
+header > .menuBuscar > button, header > .menuBuscarMovil > button {
+    border-radius: 15%;
+    border: none;
+    background: transparent;
+}
+
+header > .menuBuscar > button > a, header > .menuBuscarMovil > button > a {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+header > .menuBuscar > button > a:hover, header > .menuBuscarMovil > button > a:hover {
+    opacity: inherit;
+}
+
+header > .menuBuscarMovil {
+    display: none;
+}
+
+header > .menuBuscarMovil > menu {
+     display: none;
+}
+
+header > .menuBuscarMovil > menu > li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+header > .menuBuscarMovil > menu > li > a {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+header > .menuBuscarMovil > menu > li > a:hover {
+    opacity: inherit;
+}
+
+header > .menuBuscarMovil > div {
+    display: flex;
+}
+header > .menuBuscarMovil > div > label > input {
+    width: 100%;
+}
+
+header > .menuBuscarMovil > div > button {
+    border-radius: 15%;
+    border: none;
+    background: transparent;
+}
+
+
+/* responsive del menu para el movil */
+@media screen and (max-width: 805px) {
+    header > .menuBuscar {
+        display: none;
+    }
+    header > .menuBuscarMovil {
+        display: flex;
+        list-style-position: revert;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    header > .menuBuscarMovil > div > label {
+        max-width: 90%;
+    }
+    
+}

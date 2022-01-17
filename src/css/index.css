@@ -1,0 +1,194 @@
+
+/*Estilos calemdaro y video */
+#calendarioVideo {
+    font-family: 'PT Serif', serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#calendario, #video {
+    width: 50%;
+    padding: 0 5px 5px 0;
+}
+
+#calendario > div {
+    padding: 12px 10px;
+    width: 100%;
+    background: var(--antique-brass);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#calendario > div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#calendario > div ul li {
+    color: var(--champagne-pink);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#calendario > div > ul > li > span {
+    font-size: 18px;
+}
+
+#calendario > div .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+#calendario > div .next {
+    float: right;
+    padding-top: 10px;
+}
+
+#calendario > ul > li {
+    min-width: 13.6%;
+}
+
+#calendario > .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: var(--bone);
+}
+
+#calendario > .weekdays > li {
+    display: inline-block;
+    color: var(--black-olive);
+    text-align: center;
+}
+
+#calendario > .days {
+    padding: 10px 0;
+    background: var(--black-olive);
+    margin: 0;
+}
+
+#calendario > .days > li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--champagne-pink);
+}
+
+#calendario > .days > li > .active {
+    padding: 5px;
+    background: var(--antique-brass);
+    color: var(--black-olive) !important;
+}
+
+#video > video {
+    width: 100%;
+    height: 92.4%;
+}
+/*Estilos de la lista de eventos y noticias */
+#listEvents, #listNews {
+    display: grid;
+    padding: 5px 5px;
+}
+
+
+#eventsNews {
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#listEvents {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#listNews {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#listEvents > article, #listNews > article {
+    padding: 0.5rem;
+}
+
+#listEvents > article > .imgTituloUbicacionTipoDiaHora, #listNews > article > .imgTituloDia {
+    display: flex;
+}
+
+#listEvents > article > .imgTituloUbicacionTipoDiaHora > img, #listNews > article > .imgTituloDia > img {
+    width: 20%;
+    padding: 0.5rem;
+}
+
+#listEvents > article > .imgTituloUbicacionTipoDiaHora > .tituloUbicacionTipoDiaHora,
+#listNews > article > .imgTituloDia > .tituloDia {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/*Estilos del input tipo botoón*/
+main > input[type="button"] {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--black-olive);
+    color: var(--champagne-pink);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 1%;
+}
+
+main > input[type="button"]:hover {
+    background: var(--antique-brass);
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    #calendario > ul > li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #calendario > ul > li,
+    #calendario > ul > li {
+        width: 12.5%;
+    }
+
+    #calendario > ul > li > .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    #calendario > ul > li,
+    #calendario > ul > li {
+        width: 12.2%;
+    }
+}
+
+
+@media screen and (max-width: 805px) {
+    main > #calendarioVideo {
+        flex-direction: column;
+    }
+
+    #calendario, #video {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    main > #eventsNews > #events > #listEvents,
+    main > #eventsNews > #news > #listNews {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+}

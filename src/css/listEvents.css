@@ -1,0 +1,72 @@
+/*Estilos que afectan a los  elemento table de la clase listado de eventos*/
+.listadoEventos > table {
+    border-collapse: collapse;
+    width: 100%;
+}
+/*Clase listadoEventos */
+.listadoEventos {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    overflow: hidden;
+}
+/*Estilos de los elementos de la tabla */
+
+.listadoEventos > table td, .listadoEventos > table th {
+    padding: 6px 1px;
+}
+
+.listadoEventos > table td:nth-child(1), .listadoEventos > table th:nth-child(1) {
+    width: 30%;
+}
+
+.listadoEventos > table td:nth-child(2), .listadoEventos > table th:nth-child(2) {
+    width: 10%;
+}
+
+.listadoEventos > table td:nth-child(3), .listadoEventos > table th:nth-child(3) {
+    width: 10%;
+}
+
+.listadoEventos > table td:nth-child(4), .listadoEventos > table th:nth-child(4) {
+    width: 15%;
+}
+
+.listadoEventos > table td:nth-child(5), .listadoEventos > table th:nth-child(5),
+.listadoEventos > table td:nth-child(6), .listadoEventos > table th:nth-child(6) {
+    width: 6%;
+}
+
+.listadoEventos > table thead th, .listadoEventos > table tfoot th {
+    background: linear-gradient(to top, var(--black-olive) 5%, var(--artichoke) 100%);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.listadoEventos > table thead th:first-child, .listadoEventos > table tfoot th:first-child  {
+    border: none;
+}
+.listadoEventos > table tbody {
+    width: 70px;
+    overflow: auto;
+
+}
+
+.listadoEventos > table tbody td {
+    color: var(--black-olive);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.listadoEventos > table tbody tr:nth-child(0) td {
+    background: #F4E3FF;
+    color: var(--black-olive);
+}
+
+.listadoEventos > table tbody td:first-child {
+    border-left: none;
+}
+
+.listadoEventos > table tbody tr:last-child td {
+    border-bottom: none;
+}

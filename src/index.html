@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Noticias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="css/genericStyles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/05edd100f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="iconoTitulo">
+        <img src="img/logo/logo.png" alt="Logo">
+        <h2>Noticias</h2>
+    </div>
+    <!-- Menú para versión Responsibe -->
+    <div class="menuBuscarMovil" id="menuBuscarMovil">
+        <div>
+            <label for="busquedaMovil"><input id="busquedaMovil" type="search" placeholder="buscar"></label>
+            <button type="submit" value="buscar"><a class="material-icons md-18">search</a></button>
+        </div>
+        <a id="cerrarMenu">&#9776;</a>
+        <menu id="menu">
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="listEvents.html" target="_blank">Listado de Eventos</a></li>
+        </menu>
+    </div>
+<!--Elementos del menú -->
+    <div class="menuBuscar" id="menuBuscar">
+        <menu>
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="listEvents.html" target="_blank">Listado de Eventos</a></li>
+        </menu>
+        <label for="busqueda"><input id="busqueda" type="search" placeholder="buscar"></label>
+        <button type="submit" value="buscar"><a class="material-icons md-18">search</a></button>
+    </div>
+</header>
+<main>
+    <!--Calendario y video -->
+    <section id="calendarioVideo">
+        <section id="calendario">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>noviembre<br><span>2021</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="weekdays">
+                <li>lun</li><li>mar</li><li>mie</li><li>jue</li><li>vie</li><li>sab</li><li>dom</li>
+            </ul>
+            <ul class="days">
+                <li><span class="active"><a href="listEvents.html" target="_blank">01</a></span></li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li>
+                <li>08</li><li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li>
+                <li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li>
+                <li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li><span class="active">28</span></li>
+                <li>29</li><li>30</li>
+            </ul>
+        </section>
+        <!--Sección video -->
+        <section id="video">
+            <video controls>
+                <source type="video/mp4" src="img/video/VideoIndex.mp4.mp4" title="Video de la explicación del proyecto">
+            </video>
+        </section>
+    </section>
+    <!--Sección general de eventos y noticias -->
+    <section id="eventsNews">
+        <!--Sección eventos -->
+        <section id="events">
+            <h1>Eventos</h1>
+            <section id="listEvents"></section>
+        </section><br>
+        <!-- Noticias-->
+        <section id="news">
+            <h1>Noticias</h1>
+            <section id="listNews"></section>
+        </section>
+    </section>
+    <!--Bóton scroll-->
+    <input id="goToTop" type="button" title="Go to Top" value="Top">
+</main>
+<footer>
+    <!--Imagen-->
+    <div class="iconoTitulo">
+        <img src="img/logo/logo.png" alt="Logo">
+        <h2>Noticias</h2>
+    </div>
+
+    <div class="navNavegacion">
+        Siguenos en
+        <nav>
+            <!--Redes sociales -->
+            <ul>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

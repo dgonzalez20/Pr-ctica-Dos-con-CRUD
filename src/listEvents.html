@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lista de Eventos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="css/genericStyles.css">
+    <link rel="stylesheet" href="css/listEvents.css">
+    <link rel="stylesheet" href="css/newOverlay.css">
+    <script type="module" src="js/newOverlay.js"></script>
+    <script type="module" src="js/listEvents.js"></script>
+    <script src="https://kit.fontawesome.com/05edd100f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="iconoTitulo">
+        <img src="img/logo/logo.png" alt="Logo">
+        <h2>Lista de Eventos</h2>
+    </div>
+<!--Menu para versión mobil -->
+    <div class="menuBuscarMovil" id="menuBuscarMovil">
+        <div>
+            <label for="busquedaMovil"><input id="busquedaMovil" type="search" placeholder="buscar"></label>
+            <button type="submit" value="buscar"><a class="material-icons md-18">search</a></button>
+        </div>
+        <a id="cerrarMenu">&#9776;</a>
+        <menu id="menu">
+            <li><a href="#listadoEventos">Listado de Eventos</a></li>
+            <li><a href="index.html" target="_blank">Noticias</a></li>
+            <li><a id="crearNuevoEventoMovil" data-open="ventanaEmergenteEventForm">Nuevo Evento</a></li>
+        </menu>
+    </div>
+
+    <div class="menuBuscar" id="menuBuscar">
+        <menu>
+            <li><a href="#listadoEventos">Listado de Eventos</a></li>
+            <li><a href="index.html" target="_blank">Noticias</a></li><!--class="open-modal"-->
+            <li><a data-open="ventanaEmergenteEventForm">Nuevo Evento</a></li>
+        </menu>
+        <label for="busqueda"><input id="busqueda" type="search" placeholder="buscar"></label>
+        <button type="submit" value="buscar"><a class="material-icons md-18">search</a></button>
+    </div>
+</header>
+<main>
+    <section class="listadoEventos" id="listadoEventos">
+        <h1>Eventos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Tipo</th>
+                    <th>Autor</th>
+                    <th>Fecha</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTable">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Total</th>
+                    <th id="footerTable"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="ventanaEmergenteEventForm" class="ventanaEmergenteEventForm" data-animation="slideInOutLeft">
+        <section>
+            <form method="post" enctype="multipart/form-data" name="eventoFormulario">
+                <label for="tituloEvent">Titulo</label>
+                <input name="tituloEvento" type="text" id="tituloEvent" placeholder="Escriba el título" required>
+
+                <label for="ubicacionEvent">Ubicación</label>
+                <input name="ubicationEvento" type="text" id="ubicacionEvent" placeholder="Escriba la dirección donde se celebra" required>
+
+                <label for="tipoEvent">Tipo</label>
+                <input class="recogidaDatos" type="text" id="tipoEvent" placeholder="Seleccione el tipo"
+                       list="listTipo" required>
+                <datalist id="listTipo">
+                    <option value="Eliga una opción" selected disabled>Eliga una opción</option>
+                    <option value="cine">Cine</option>
+                    <option value="musica">Música</option>
+                    <option value="estudios">Estudios</option>
+                </datalist>
+
+                <label for="imagenEvent">Imagen</label>
+                <input class="recogidaDatos" type="file" id="imagenEvent" placeholder="inserte una imagen"
+                       accept="image/png, image/jpeg" required>
+
+                <label for="descripcionEvent">Descripción</label>
+                <textarea class="recogidaDatos" id="descripcionEvent"
+                          placeholder="Escriba la descripción del evento" required></textarea>
+
+                <label for="autorEvent">Autor</label>
+                <input class="recogidaDatos" id="autorEvent" type="text"
+                       placeholder="Escriba el nombre del autor del articulo" required>
+
+                <label for="fechaEvent">Fecha</label>
+                <input class="recogidaDatos" id="fechaEvent" type="date" pattern="\d{2} / \d{2} / \d{4}"
+                       placeholder="Escriba la fecha" required>
+
+                <label for="horaEvent">Hora</label>
+                <input class="recogidaDatos" id="horaEvent" type="time" placeholder="Escriba la hora" required>
+
+                <input aria-label="close modal" type="button" id="crearEvento" value="Crear" data-close>
+                <!----><!--class="close-modal" -->
+            </form>
+        </section>
+    </section>
+</main>
+<footer>
+    <div class="iconoTitulo">
+        <img src="img/logo/logo.png" alt="Logo">
+        <h2>Lista de Eventos</h2>
+    </div>
+
+    <div class="navNavegacion">
+        Siguenos en
+        <nav>
+            <ul>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

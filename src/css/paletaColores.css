@@ -1,0 +1,39 @@
+:root {
+    /* CSS HEX */
+    --antique-brass: #b98b73ff;
+    --antique-brass-2: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --champagne-pink: #ffe8d6ff;
+    --bone: #d4c7b0ff;
+    --ash-gray: #b7b7a4ff;
+    --artichoke: #a5a58dff;
+    --ebony: #6b705cff;
+    --black-olive: #3f4238ff;
+
+    /* CSS HSL */
+    --antique-brass: hsla(21, 33%, 59%, 1);
+    --antique-brass-2: hsla(21, 43%, 65%, 1);
+    --desert-sand: hsla(24, 43%, 76%, 1);
+    --champagne-pink: hsla(26, 100%, 92%, 1);
+    --bone: hsla(38, 30%, 76%, 1);
+    --ash-gray: hsla(60, 12%, 68%, 1);
+    --artichoke: hsla(60, 12%, 60%, 1);
+    --ebony: hsla(75, 10%, 40%, 1);
+    --black-olive: hsla(78, 8%, 24%, 1);
+
+    /* CSS Gradient */
+    --gradient-top: linear-gradient(0deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-right: linear-gradient(90deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-bottom: linear-gradient(180deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-left: linear-gradient(270deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-top-right: linear-gradient(45deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-bottom-right: linear-gradient(135deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-top-left: linear-gradient(225deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-bottom-left: linear-gradient(315deg, #b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+    --gradient-radial: radial-gradient(#b98b73ff, #cb997eff, #ddbea9ff, #ffe8d6ff, #d4c7b0ff, #b7b7a4ff, #a5a58dff, #6b705cff, #3f4238ff);
+
+
+    --error-form: #ff0000fa;
+
+}
+
